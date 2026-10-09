@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #FFFFFF;
+    --foreground: #1E293B;
+  }
+
+  body {
+    background-color: #FFFFFF;
+    color: #1E293B;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom Scrollbar for Clinical Data Tables */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F3F8FF;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4DCFA;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94C1F6;
+}
